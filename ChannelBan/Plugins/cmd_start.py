@@ -13,13 +13,3 @@ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴛʜᴇ ᴄʜᴀᴛ ᴀɴᴅ ᴘʀᴏᴍᴏᴛ
         )
     )
 
-@Client.on_message(filters.group & filters.command(["start"]))
-async def start(_, message: Message):
-    await message.reply_text(
-        f"""<b>Hᴇʏ {message.from_user.first_name}!</b>
-PM me if you have any questions on how to use me!""",
-        reply_markup=InlineKeyboardMarkup( [[
-           InlineKeyboardButton("Click me¯\_(ツ)_/¯", url="https://t.me/AntiChannelBan_xbot?start")
-           ]]
-        )
-    )
