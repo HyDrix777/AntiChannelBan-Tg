@@ -12,7 +12,7 @@ force_subhydra = "songdownload_group"
 async def start(bot, message: Message):
     if force_subhydra:
         try:
-            user = await client. get_chat_member(force_subhydra, message.from_user.id)
+            user = await bot. get_chat_member(force_subhydra, message.from_user.id)
             if user.status == "kick out":
                 await message.reply_text("you are banned")
                 return
